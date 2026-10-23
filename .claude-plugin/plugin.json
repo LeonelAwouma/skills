@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Automated video production with Remotion, storyboards, narration, subtitles, branding and rendering workflows.",
   "author": {
-    "name": "Celeste Corp"
+    "name": "Celeste Corp",
+    "email": "leonelawouma65@gmail.com"
   },
-  "icon": ".claude-plugin/icon.png"
+  "icon": ".claude-plugin/icon.png",
+  "homepage": "https://github.com/LeonelAwouma/skills",
+  "repository": "https://github.com/LeonelAwouma/skills",
+  "documentationUrl": "https://github.com/LeonelAwouma/skills/blob/main/README.md",
+  "supportUrl": "https://github.com/LeonelAwouma/skills/issues",
+  "privacyPolicyUrl": "https://github.com/LeonelAwouma/skills/blob/main/PRIVACY.md"
 }

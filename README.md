@@ -23,7 +23,7 @@ Everything is run as `node <skill>/scripts/cv.mjs <command>` from the project fo
 
 ## Install
 
-See [references/install-windows.md](references/install-windows.md): project install (`.claude/skills/celeste-video/`), personal install (`~/.claude/skills/celeste-video/`), or the ZIP with `install/install.ps1`.
+`/plugin install celeste-video --marketplace LeonelAwouma/skills`, or see [skills/celeste-video/references/install-windows.md](skills/celeste-video/references/install-windows.md): project install (`.claude/skills/celeste-video/`), personal install (`~/.claude/skills/celeste-video/`), or the ZIP with `skills/celeste-video/install/install.ps1`.
 
 ## Use
 
@@ -35,7 +35,18 @@ Change copy -> `video/storyboard.json`. Change colours/logo/fonts -> `video/them
 
 ## Documentation
 
-`SKILL.md` (orchestration) and `references/`: storyboard, scenes, voice-over, audio mix, subtitles, memory-safe rendering, captures, branding, existing compositions, install, troubleshooting, architecture. Licences: `LICENSE` (MIT, this code) and `THIRD_PARTY.md` (Remotion, Piper, voice models, fonts). Voice licences matter for commercial use: `cv voice list`.
+`skills/celeste-video/SKILL.md` (orchestration) and `skills/celeste-video/references/`: storyboard, scenes, voice-over, audio mix, subtitles, memory-safe rendering, captures, branding, existing compositions, install, troubleshooting, architecture. Licences: `skills/celeste-video/LICENSE` (MIT, this code) and `skills/celeste-video/THIRD_PARTY.md` (Remotion, Piper, voice models, fonts). Voice licences matter for commercial use: `cv voice list`.
+
+## Privacy, Data Processing and External Services
+
+Celeste Video runs locally: your storyboard, narration text, brand assets and rendered video stay in your project folder, and no personal data is collected or sent to Celeste Corp.
+
+- **Processed locally, never leaves your machine**: storyboard/theme/pronunciation JSON, generated narration and music audio, rendered MP4/SRT, pipeline cache (`.cv/`), and the local log (`.cv/logs/cv.log`).
+- **External services contacted, each only on an explicit command**: `npm` registry (`cv init`), PyPI and the Hugging Face `rhasspy/piper-voices` repository (`cv voice setup --yes`, requires your explicit confirmation), a single public Hugging Face model-card URL (`cv voice info <name>`), and Google Fonts' CDN while Remotion renders a video.
+- **Web captures** (`cv capture`) are off unless you create `video/captures.json` with `"authorized": true`; they only visit `localhost` or hosts you explicitly allow-list, refuse to type into password fields, and blur password/credit-card fields in screenshots on a best-effort basis before saving them locally.
+- No credentials, API keys, or secret files are read or transmitted by the plugin's own code.
+
+Full details: [PRIVACY.md](PRIVACY.md). Questions: leonelawouma65@gmail.com or [open an issue](https://github.com/LeonelAwouma/skills/issues).
 
 ## Limits (honest list)
 
