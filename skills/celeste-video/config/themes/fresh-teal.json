@@ -1,0 +1,11 @@
+{
+  "name": "fresh-teal",
+  "description": "Vert d'eau et turquoise sur fond sombre : santé, durable, finance douce.",
+  "fonts": { "display": "Manrope", "ui": "Inter" },
+  "colors": {
+    "navy950": "#031317", "navy900": "#06222A", "navy800": "#0A3541", "navy700": "#0F4A5A",
+    "ink": "#0B2530", "royal": "#0A6C7E", "blue": "#12A1B6", "sky": "#4CC9D8", "cyan": "#5EEAC0",
+    "ice": "#D9FBF1", "mist": "#EFFAF8", "white": "#FFFFFF", "slate": "#8FB3B8", "line": "#D3ECE8",
+    "warn": "#FFB020", "danger": "#FF5A5F", "ok": "#2DD4A7"
+  }
+}

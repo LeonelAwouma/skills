@@ -1,0 +1,11 @@
+{
+  "name": "sunset-warm",
+  "description": "Prune profond et orange chaleureux : restauration, mode, créatif.",
+  "fonts": { "display": "Poppins", "ui": "DMSans" },
+  "colors": {
+    "navy950": "#17050F", "navy900": "#260918", "navy800": "#431129", "navy700": "#5E1A3A",
+    "ink": "#260918", "royal": "#C2410C", "blue": "#F97316", "sky": "#FB923C", "cyan": "#FFC56B",
+    "ice": "#FFEBD1", "mist": "#FFF6EC", "white": "#FFFFFF", "slate": "#C9A3B2", "line": "#F2DCCB",
+    "warn": "#FFD24A", "danger": "#FF4D5E", "ok": "#34D399"
+  }
+}

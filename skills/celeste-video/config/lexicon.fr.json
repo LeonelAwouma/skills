@@ -1,0 +1,6 @@
+{
+  "_note": "Prononciations vérifiées avec `--phonemes` sur fr_FR-upmc-medium. eSpeak ajoute de fausses liaisons / un -s final sur ces mots. Format : mot -> phonèmes entre [[ ]]. Ajoutez vos propres mots dans video/pronunciation.json.",
+  "logiciels": "[[ loʒisjˈɛl ]]",
+  "plateformes": "[[ platfˈɔʁm ]]",
+  "adaptés": "[[ adaptˈe ]]"
+}

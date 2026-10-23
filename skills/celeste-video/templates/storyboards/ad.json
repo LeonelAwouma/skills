@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "meta": {
+    "brand": "Votre Marque",
+    "lang": "fr",
+    "slug": "publicite",
+    "audience": "Entrepreneurs, PME, startups",
+    "tone": "Premium, rassurant, orienté conversion",
+    "goal": "Donner envie de contacter l'entreprise",
+    "templateDescription": "Publicité de 30 s : problème, solution, marque, 3 prestations, promesse, appel à l'action"
+  },
+  "video": { "fps": 30, "format": "9:16", "shortSide": 1080, "duration": 30 },
+  "theme": "midnight-blue",
+  "audio": {
+    "music": { "mode": "synth", "style": "tech-uplift" },
+    "voice": { "enabled": true, "speed": 1.05 }
+  },
+  "subtitles": { "burn": true },
+  "scenes": [
+    {
+      "id": "probleme",
+      "type": "problem-solution",
+      "duration": 6,
+      "problem": { "lines": ["Votre entreprise", "*perd du temps* ?"] },
+      "solution": { "lines": ["Et si la technologie", "vous en faisait", "*gagner* ?"] },
+      "narration": [
+        { "at": 0.2, "text": "Votre entreprise perd du temps ?" },
+        { "at": 3.1, "text": "Et si vos outils travaillaient enfin ensemble ?" }
+      ]
+    },
+    {
+      "id": "marque",
+      "type": "logo-reveal",
+      "duration": 4,
+      "transition": { "type": "bloom" },
+      "lines": ["Vos idées.", "*Nos solutions*", "*numériques.*"],
+      "narration": [{ "at": 0.6, "text": "Chez {brand}, nous créons des solutions numériques sur mesure." }]
+    },
+    {
+      "id": "applications",
+      "type": "showcase",
+      "duration": 4,
+      "transition": { "type": "wipe" },
+      "tag": "Développement sur mesure",
+      "lines": ["Des applications", "pensées *pour vous.*"],
+      "visual": { "kind": "app" },
+      "narration": [{ "at": 0.3, "text": "Des logiciels et des plateformes conçus pour votre activité." }]
+    },
+    {
+      "id": "automatisation",
+      "type": "showcase",
+      "duration": 4,
+      "transition": { "type": "push" },
+      "tag": "IA & automatisation",
+      "lines": ["Automatisez ce", "qui vous *ralentit.*"],
+      "visual": { "kind": "automation" },
+      "narration": [{ "at": 0.3, "text": "Nous automatisons vos processus grâce à l'intelligence artificielle." }]
+    },
+    {
+      "id": "integrations",
+      "type": "showcase",
+      "duration": 4,
+      "transition": { "type": "push" },
+      "tag": "API & intégrations",
+      "lines": ["Connectez", "vos *outils.*"],
+      "visual": { "kind": "integrations" },
+      "narration": [{ "at": 0.3, "text": "Et nous connectons vos systèmes pour simplifier votre quotidien." }]
+    },
+    {
+      "id": "promesse",
+      "type": "value",
+      "duration": 4,
+      "transition": { "type": "wipe" },
+      "lines": ["Moins de", "complexité.", "Plus de", "*possibilités.*"],
+      "sub": "Un partenaire technique pour concrétiser vos ambitions.",
+      "narration": [{ "at": 0.2, "text": "Moins de complexité. Plus de possibilités." }]
+    },
+    {
+      "id": "contact",
+      "type": "cta",
+      "duration": 4,
+      "transition": { "type": "bloom" },
+      "lines": ["Votre projet mérite", "*de devenir réalité.*"],
+      "cta": "Parlons-en.",
+      "contactLabel": "Contact",
+      "contacts": [{ "kind": "email", "value": "contact@exemple.com" }],
+      "narration": [{ "at": 0.5, "text": "Vous avez un projet ? Parlons-en." }]
+    }
+  ]
+}

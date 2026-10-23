@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "meta": {
+    "brand": "Votre Marque",
+    "lang": "fr",
+    "slug": "explicatif",
+    "audience": "Clients et prospects",
+    "tone": "Pédagogique, positif",
+    "goal": "Expliquer une offre ou un processus",
+    "templateDescription": "Vidéo explicative de 30 s : accroche, 3 points clés, étapes, promesse, contact"
+  },
+  "video": { "fps": 30, "format": "9:16", "shortSide": 1080, "duration": 30 },
+  "theme": "fresh-teal",
+  "audio": {
+    "music": { "mode": "synth", "style": "calm-ambient" },
+    "voice": { "enabled": true, "speed": 1.0 }
+  },
+  "subtitles": { "burn": true },
+  "scenes": [
+    {
+      "id": "accroche",
+      "type": "kinetic",
+      "duration": 4,
+      "lines": ["Comment ça *marche* ?"],
+      "narration": [{ "at": 0.3, "text": "Comment ça marche ?" }]
+    },
+    {
+      "id": "points",
+      "type": "bullets",
+      "duration": 8,
+      "transition": { "type": "fade" },
+      "tag": "L'essentiel",
+      "lines": ["Trois *points* clés"],
+      "items": [
+        { "title": "Simple", "text": "Un seul interlocuteur", "icon": "check" },
+        { "title": "Rapide", "text": "Des délais courts", "icon": "bolt" },
+        { "title": "Sûr", "text": "Des données protégées", "icon": "shield" }
+      ],
+      "narration": [{ "at": 0.4, "text": "C'est simple, c'est rapide, et c'est sûr." }]
+    },
+    {
+      "id": "etapes",
+      "type": "showcase",
+      "duration": 8,
+      "transition": { "type": "wipe" },
+      "tag": "Notre méthode",
+      "lines": ["De l'idée à", "la *réalisation*"],
+      "visual": { "kind": "timeline" },
+      "narration": [{ "at": 0.4, "text": "De l'idée à la réalisation, nous vous accompagnons à chaque étape." }]
+    },
+    {
+      "id": "promesse",
+      "type": "value",
+      "duration": 5,
+      "transition": { "type": "fade" },
+      "lines": ["Moins de", "complexité.", "Plus de", "*possibilités.*"],
+      "narration": [{ "at": 0.3, "text": "Moins de complexité. Plus de possibilités." }]
+    },
+    {
+      "id": "contact",
+      "type": "cta",
+      "duration": 5,
+      "transition": { "type": "bloom" },
+      "lines": ["Prêt à *commencer* ?"],
+      "cta": "Écrivez-nous.",
+      "contacts": [{ "kind": "email", "value": "contact@exemple.com" }],
+      "narration": [{ "at": 0.5, "text": "Prêt à commencer ? Écrivez-nous." }]
+    }
+  ]
+}

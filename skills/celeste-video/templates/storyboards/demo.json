@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "meta": {
+    "brand": "Votre Application",
+    "lang": "fr",
+    "slug": "demo",
+    "audience": "Prospects et utilisateurs potentiels",
+    "tone": "Clair, concret, pédagogique",
+    "goal": "Montrer l'application en action",
+    "templateDescription": "Démonstration de 45 s à partir de captures réelles (Playwright) : accroche, 3 parcours, bénéfices, contact"
+  },
+  "video": { "fps": 30, "format": "16:9", "shortSide": 1080, "duration": 45 },
+  "theme": "midnight-blue",
+  "audio": {
+    "music": { "mode": "synth", "style": "bright-corporate" },
+    "voice": { "enabled": true, "speed": 1.03 }
+  },
+  "subtitles": { "burn": true },
+  "scenes": [
+    {
+      "id": "accroche",
+      "type": "kinetic",
+      "duration": 5,
+      "variant": "slam",
+      "lines": ["Découvrez *{brand}*", "en 45 secondes"],
+      "narration": [{ "at": 0.3, "text": "Découvrez {brand} en quarante-cinq secondes." }]
+    },
+    {
+      "id": "accueil",
+      "type": "screenshot",
+      "duration": 9,
+      "transition": { "type": "fade" },
+      "lines": ["Un tableau de bord *clair*"],
+      "image": "captures/accueil.png",
+      "focus": [
+        { "x": 0.3, "y": 0.3, "zoom": 1.0, "at": 0 },
+        { "x": 0.7, "y": 0.35, "zoom": 1.5, "at": 5 }
+      ],
+      "narration": [{ "at": 0.4, "text": "Dès l'ouverture, vous voyez l'essentiel de votre activité." }]
+    },
+    {
+      "id": "parcours",
+      "type": "screenshot",
+      "duration": 9,
+      "transition": { "type": "push" },
+      "lines": ["Des parcours *simples*"],
+      "image": "captures/parcours.png",
+      "focus": [
+        { "x": 0.5, "y": 0.5, "zoom": 1.0, "at": 0 },
+        { "x": 0.4, "y": 0.6, "zoom": 1.6, "at": 5 }
+      ],
+      "narration": [{ "at": 0.4, "text": "Chaque action se fait en quelques clics, sans formation." }]
+    },
+    {
+      "id": "resultat",
+      "type": "screenshot",
+      "duration": 9,
+      "transition": { "type": "push" },
+      "lines": ["Des résultats *immédiats*"],
+      "image": "captures/resultat.png",
+      "focus": [
+        { "x": 0.7, "y": 0.4, "zoom": 1.0, "at": 0 },
+        { "x": 0.6, "y": 0.5, "zoom": 1.5, "at": 5 }
+      ],
+      "narration": [{ "at": 0.4, "text": "Et vos résultats s'affichent immédiatement." }]
+    },
+    {
+      "id": "benefices",
+      "type": "bullets",
+      "duration": 8,
+      "transition": { "type": "wipe" },
+      "tag": "Pourquoi {brand}",
+      "lines": ["Trois bonnes", "*raisons*"],
+      "items": [
+        { "title": "Gain de temps", "text": "Moins de tâches répétitives", "icon": "clock" },
+        { "title": "Fiabilité", "text": "Vos données restent cohérentes", "icon": "shield" },
+        { "title": "Simplicité", "text": "Prise en main immédiate", "icon": "check" }
+      ],
+      "narration": [{ "at": 0.5, "text": "Gagnez du temps, fiabilisez vos données, et prenez l'outil en main immédiatement." }]
+    },
+    {
+      "id": "contact",
+      "type": "cta",
+      "duration": 5,
+      "transition": { "type": "bloom" },
+      "lines": ["Essayez-le", "*dès aujourd'hui*"],
+      "cta": "Parlons-en.",
+      "contactLabel": "Contact",
+      "contacts": [{ "kind": "web", "value": "www.exemple.com" }],
+      "narration": [{ "at": 0.5, "text": "Essayez-le dès aujourd'hui." }]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "midnight-blue",
+  "description": "Bleu nuit, bleu royal et cyan : technologie sérieuse et lumineuse (palette d'origine de la publicité Céleste Corp).",
+  "fonts": { "display": "PlusJakartaSans", "ui": "Inter" },
+  "colors": {
+    "navy950": "#040821", "navy900": "#070D2E", "navy800": "#0B1550", "navy700": "#122070",
+    "ink": "#0B1233", "royal": "#0A2BD6", "blue": "#1F5BFF", "sky": "#3B8BFF", "cyan": "#22D3EE",
+    "ice": "#CFF3FF", "mist": "#EEF4FF", "white": "#FFFFFF", "slate": "#8EA0C9", "line": "#D8E2FA",
+    "warn": "#FFB020", "danger": "#FF4D5E", "ok": "#2DD4A7"
+  }
+}

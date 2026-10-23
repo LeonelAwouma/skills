@@ -1,0 +1,14 @@
+{
+  "name": "celeste-video-skill",
+  "version": "1.0.0",
+  "description": "Claude Code skill: automated video production with React, Remotion and Piper TTS",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "test:py": "python -m unittest discover -s tests -p \"test_*.py\"",
+    "doctor": "node scripts/cv.mjs doctor"
+  }
+}
