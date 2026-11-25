@@ -37,6 +37,31 @@ test("rejects unknown types, duplicate ids, bad markers, wrong total", () => {
   assert.match(text, /does not match the sum/);
 });
 
+test("required scene fields: presence check only", () => {
+  // Complete scenes are accepted.
+  assert.equal(validateStoryboard(load("ad"), {}).ok, true);
+
+  // A missing required field (absent, or explicitly undefined) is rejected with an explicit message.
+  for (const strip of [(s) => delete s.lines, (s) => (s.lines = undefined)]) {
+    const sb = load("ad");
+    assert.equal(sb.scenes[6].type, "cta");
+    strip(sb.scenes[6]);
+    const r = validateStoryboard(sb, {});
+    assert.equal(r.ok, false);
+    assert.deepEqual(r.errors, ['scenes[6] (cta): missing "lines"']);
+  }
+
+  // Other validations are unaffected: the missing-field error is simply added to them.
+  const bad = load("ad");
+  bad.scenes[5].duration = 0.5;
+  const base = validateStoryboard(bad, {}).errors;
+  assert.ok(base.some((e) => /scenes\[5\]\.duration/.test(e)));
+  const both = load("ad");
+  both.scenes[5].duration = 0.5;
+  delete both.scenes[6].lines;
+  assert.deepEqual(validateStoryboard(both, {}).errors.sort(), [...base, 'scenes[6] (cta): missing "lines"'].sort());
+});
+
 test("licence is mandatory for a provided music file", () => {
   const sb = load("ad");
   sb.audio.music = { mode: "file", file: "audio/x.mp3" };

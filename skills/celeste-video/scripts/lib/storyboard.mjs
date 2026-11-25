@@ -103,7 +103,12 @@ export function validateStoryboard(input, defaults = {}) {
     if (!rule) {
       errors.push(`${at}.type: unknown "${s.type}". Known: ${SCENE_TYPES.join(", ")}`);
     } else {
-      for (const key of rule.required) if (s[key] === undefined) errors.push(`${at} (${s.type}): missing "${key}"`);
+      // Presence check only: each scene type lists the storyboard property names it must define.
+      for (const requiredField of rule.required) {
+        if (!Object.hasOwn(s, requiredField) || s[requiredField] === undefined) {
+          errors.push(`${at} (${s.type}): missing "${requiredField}"`);
+        }
+      }
     }
     if (!(typeof s.duration === "number" && s.duration >= 1.5 && s.duration <= 60)) errors.push(`${at}.duration: seconds, between 1.5 and 60`);
     else total += s.duration;
