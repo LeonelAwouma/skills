@@ -1,0 +1,4 @@
+{
+  "preset": "midnight-blue",
+  "logo": { "src": "brand/celeste-corp-logo.png", "focus": { "x": 0.6, "y": 0.405 } }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "celeste-video",
+  "version": "1.0.2",
+  "description": "Video production skill by Leonel Awouma (Céleste Corp brand): turns a plain-language brief into a storyboard, then drives the separately installed open-source Celeste Video engine (Remotion, Piper narration, music, captions) to render an MP4 that is checked before delivery.",
+  "author": {
+    "name": "Leonel Awouma",
+    "email": "leonelawouma65@gmail.com"
+  },
+  "homepage": "https://github.com/LeonelAwouma/skills",
+  "repository": "https://github.com/LeonelAwouma/skills",
+  "privacyPolicyUrl": "https://github.com/LeonelAwouma/skills/blob/main/marketplace/celeste-video/PRIVACY.md",
+  "icon": ".claude-plugin/icon.png"
+}

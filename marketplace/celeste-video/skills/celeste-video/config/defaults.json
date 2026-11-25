@@ -1,0 +1,50 @@
+{
+  "video": { "fps": 30, "format": "9:16", "shortSide": 1080, "duration": 30 },
+  "formats": {
+    "9:16": { "ratio": [9, 16], "label": "TikTok, Reels, YouTube Shorts" },
+    "16:9": { "ratio": [16, 9], "label": "YouTube, site web, présentation" },
+    "1:1": { "ratio": [1, 1], "label": "Publication carrée" },
+    "4:5": { "ratio": [4, 5], "label": "LinkedIn, Instagram portrait" }
+  },
+  "render": {
+    "composition": "main",
+    "codec": "h264",
+    "audioCodec": "aac",
+    "crf": 18,
+    "maxAttempts": 2,
+    "memory": {
+      "baseGB": 1.0,
+      "perWorkerGB": 1.4,
+      "minStartGB": 1.6,
+      "hardFloorGB": 0.6,
+      "pollSeconds": 4,
+      "chunkFramesLow": 120,
+      "chunkFramesNormal": 300
+    }
+  },
+  "voice": {
+    "defaultByLang": { "fr": "fr_FR-upmc-medium" },
+    "defaultSpeaker": { "fr_FR-upmc-medium": 1 },
+    "speed": 1.05,
+    "pause": 0.3,
+    "sentencePause": 0.16,
+    "targetDb": -19
+  },
+  "audio": {
+    "musicVolume": 0.62,
+    "duckedVolume": 0.2,
+    "duckAttackFrames": 8,
+    "duckReleaseFrames": 16,
+    "fadeOutSeconds": 1.2
+  },
+  "subtitles": { "burn": true, "maxChars": 27 },
+  "commercialUse": true,
+  "capture": { "enabled": false, "allowedHosts": ["localhost", "127.0.0.1"] },
+  "paths": {
+    "video": "video",
+    "public": "public",
+    "generated": "src/generated",
+    "cache": ".cv",
+    "out": "out"
+  }
+}

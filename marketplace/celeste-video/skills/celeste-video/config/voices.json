@@ -1,0 +1,35 @@
+{
+  "_note": "Licences read from each model's MODEL_CARD on https://huggingface.co/rhasspy/piper-voices (checked 2026-10). A voice that is not listed here is 'unverified': run `cv voice info <name>` and read its model card before any commercial use.",
+  "voices": {
+    "fr_FR-upmc-medium": {
+      "lang": "fr", "gender": "mixte (locuteur 0 = femme, 1 = homme « Pierre »)", "quality": "medium", "sampleRate": 22050, "speakers": 2,
+      "datasetLicense": "CC BY-SA 4.0", "commercial": "allowed-with-attribution",
+      "attribution": "Voix off : Piper TTS, modèle fr_FR-upmc (UPMC Pierre, CC BY-SA 4.0).",
+      "notes": "Voix par défaut. Rythme naturel sur les phrases courtes. La clause « share-alike » concerne le jeu de données : faire valider juridiquement une campagne payante."
+    },
+    "fr_FR-siwis-medium": {
+      "lang": "fr", "gender": "femme", "quality": "medium", "sampleRate": 22050, "speakers": 1,
+      "datasetLicense": "CC BY 4.0", "commercial": "allowed-with-attribution",
+      "attribution": "Voix off : Piper TTS, modèle fr_FR-siwis (CC BY 4.0).",
+      "notes": "Voix féminine claire."
+    },
+    "fr_FR-mls-medium": {
+      "lang": "fr", "gender": "mixte (125 locuteurs)", "quality": "medium", "sampleRate": 22050, "speakers": 125,
+      "datasetLicense": "CC BY 4.0", "commercial": "allowed-with-attribution",
+      "attribution": "Voix off : Piper TTS, modèle fr_FR-mls (CC BY 4.0).",
+      "notes": "Déconseillée pour les publicités : sur des phrases courtes la durée explose (3 mots = 3 à 6 s) et le rythme est instable."
+    },
+    "fr_FR-gilles-low": {
+      "lang": "fr", "gender": "homme", "quality": "low", "sampleRate": 16000, "speakers": 1,
+      "datasetLicense": "CC0", "commercial": "allowed",
+      "attribution": "",
+      "notes": "Déconseillée : le modèle ne connaît pas le marqueur de voyelle nasale (« on », « en » dégradés)."
+    },
+    "fr_FR-tom-medium": {
+      "lang": "fr", "gender": "homme", "quality": "medium", "sampleRate": 44100, "speakers": 1,
+      "datasetLicense": "AGPLv3", "commercial": "unclear",
+      "attribution": "",
+      "notes": "Jeu de données sous AGPLv3 : statut incertain pour un usage publicitaire. Non utilisée par défaut."
+    }
+  }
+}

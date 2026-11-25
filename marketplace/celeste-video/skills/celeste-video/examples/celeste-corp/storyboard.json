@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "meta": {
+    "brand": "Céleste Corp",
+    "lang": "fr",
+    "slug": "celeste-corp-promo",
+    "audience": "Entrepreneurs, startups, PME, organisations qui veulent moderniser leurs outils",
+    "tone": "Premium, moderne, crédible, accessible",
+    "goal": "Donner envie de contacter Céleste Corp"
+  },
+  "video": { "fps": 30, "format": "9:16", "shortSide": 1080, "duration": 35 },
+  "theme": "midnight-blue",
+  "audio": {
+    "music": { "mode": "synth", "style": "tech-uplift" },
+    "voice": { "enabled": true, "voice": "fr_FR-upmc-medium", "speaker": 1, "speed": 1.05 }
+  },
+  "subtitles": { "burn": true },
+  "scenes": [
+    {
+      "id": "accroche",
+      "type": "problem-solution",
+      "duration": 7,
+      "problem": { "lines": ["Votre entreprise", "*perd du temps* ?"] },
+      "solution": { "lines": ["Et si la technologie", "vous en faisait", "*gagner* ?"] },
+      "narration": [
+        { "at": 0.2, "text": "Votre entreprise perd du temps ?" },
+        { "at": 3.15, "text": "Et si vos outils travaillaient enfin ensemble ?" }
+      ]
+    },
+    {
+      "id": "marque",
+      "type": "logo-reveal",
+      "duration": 4,
+      "transition": { "type": "bloom" },
+      "lines": ["Vos idées.", "*Nos solutions*", "*numériques.*"],
+      "narration": [{ "at": 0.5, "text": "Chez Céleste Corp, nous développons des logiciels et des plateformes adaptés à vos besoins." }]
+    },
+    {
+      "id": "applications",
+      "type": "showcase",
+      "duration": 3.75,
+      "transition": { "type": "wipe" },
+      "tag": "Développement sur mesure",
+      "lines": ["Des applications", "pensées *pour vous.*"],
+      "visual": { "kind": "app", "appTitle": "Mon application · espace de gestion" }
+    },
+    {
+      "id": "automatisation",
+      "type": "showcase",
+      "duration": 3.75,
+      "transition": { "type": "push" },
+      "tag": "IA & automatisation",
+      "lines": ["Automatisez ce", "qui vous *ralentit.*"],
+      "visual": { "kind": "automation" },
+      "narration": [{ "at": 0.15, "text": "Nous automatisons vos processus grâce à l'intelligence artificielle" }]
+    },
+    {
+      "id": "integrations",
+      "type": "showcase",
+      "duration": 3.75,
+      "transition": { "type": "push" },
+      "tag": "API & intégrations",
+      "lines": ["Connectez", "vos *outils.*"],
+      "visual": { "kind": "integrations" },
+      "narration": [{ "at": 0.2, "text": "et connectons vos systèmes pour simplifier votre quotidien." }]
+    },
+    {
+      "id": "livraison",
+      "type": "showcase",
+      "duration": 3.75,
+      "transition": { "type": "push" },
+      "tag": "Déploiement & fiabilité",
+      "lines": ["De l'idée à la", "mise en *production.*"],
+      "visual": { "kind": "timeline" },
+      "narration": [{ "at": 0.1, "text": "De l'idée à la mise en production, nous donnons vie à vos projets.", "spoken": "De l'idée à la mise en production, nous donnons [[ vˈi ]] à vos projets." }]
+    },
+    {
+      "id": "promesse",
+      "type": "value",
+      "duration": 4,
+      "transition": { "type": "wipe" },
+      "lines": ["Moins de", "complexité.", "Plus de", "*possibilités.*"],
+      "sub": "Un partenaire technique pour concrétiser vos ambitions.",
+      "narration": [{ "at": 0.35, "text": "Moins de complexité. Plus de possibilités.", "sentencePause": 0.4 }]
+    },
+    {
+      "id": "contact",
+      "type": "cta",
+      "duration": 5,
+      "transition": { "type": "bloom" },
+      "lines": ["Votre projet mérite", "*de devenir réalité.*"],
+      "cta": "Parlons-en.",
+      "contactLabel": "Contact",
+      "contacts": [{ "kind": "email", "value": "corpceleste3@gmail.com" }],
+      "narration": [
+        { "at": 0.55, "text": "Vous avez un projet ? Parlons-en.", "sentencePause": 0.22 },
+        { "at": 3.15, "text": "Céleste Corp." }
+      ]
+    }
+  ]
+}

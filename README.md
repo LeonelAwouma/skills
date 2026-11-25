@@ -21,6 +21,10 @@ Claude writes a **storyboard** (JSON), the engine animates it with **React + Rem
 
 Everything is run as `node <skill>/scripts/cv.mjs <command>` from the project folder (`cv help`). Claude does it for you through `SKILL.md`.
 
+## Claude Plugin Directory distribution
+
+The plugin submitted to the Claude Plugin Directory is the documentation-only folder [marketplace/celeste-video/](marketplace/celeste-video/) (skill instructions, references, examples; no executable code, no pre-approved command). It drives this engine, which stays in [skills/celeste-video/](skills/celeste-video/) and is installed separately: see [marketplace/celeste-video/ENGINE.md](marketplace/celeste-video/ENGINE.md).
+
 ## Install
 
 `/plugin install celeste-video --marketplace LeonelAwouma/skills`, or see [skills/celeste-video/references/install-windows.md](skills/celeste-video/references/install-windows.md): project install (`.claude/skills/celeste-video/`), personal install (`~/.claude/skills/celeste-video/`), or the ZIP with `skills/celeste-video/install/install.ps1`.
